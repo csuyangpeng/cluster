@@ -1,5 +1,6 @@
 # Cluster
 redis/mysql/etcd cluster, addons mysqlrouter 
+<img width="1986" height="1452" alt="image" src="https://github.com/user-attachments/assets/adb7250c-c32b-4965-b777-e6b8bcfa8a64" />
 
 ## How to use the cluster
 Prepare 3 or more servers. Clone the repository, use init.sh to init the environment.
@@ -16,5 +17,3 @@ docker exec -it etcd etcdctl   --endpoints=http://10.18.30.11:2379,http://10.18.
 cluster_check.sh: used to check the health of the cluster.
 cluster_operator.sh: used to test the r/w ops of the cluster.
 cluster_consistency.sh: used to check the consistency of the cluster.
-
-<img width="1986" height="1452" alt="image" src="https://github.com/user-attachments/assets/adb7250c-c32b-4965-b777-e6b8bcfa8a64" />
