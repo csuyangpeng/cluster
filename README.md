@@ -14,6 +14,6 @@ docker exec -it etcd etcdctl   --endpoints=http://10.18.30.11:2379,http://10.18.
 <img width="1180" height="102" alt="image" src="https://github.com/user-attachments/assets/93080c62-531a-4f88-8177-91865354b8d2" />  
 
 ## How to test the HA of the cluster
-cluster_check.sh: used to check the health of the cluster.
-cluster_operator.sh: used to test the r/w ops of the cluster.
-cluster_consistency.sh: used to check the consistency of the cluster.
+cluster_check.sh: used to check the health of the cluster.  
+cluster_operator.sh: used to test the r/w ops of the cluster.  
+cluster_consistency.sh: used to check the consistency of the cluster.  
