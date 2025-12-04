@@ -41,7 +41,7 @@ fi
 
 # 检查etcd集群
 echo -e "\n4. etcd集群状态:"
-timeout 2 ETCDCTL_API=3 etcdctl --endpoints=10.18.30.11:2379,10.18.30.12:2379,10.18.30.13:2379 endpoint status --write-out=table 2>/dev/null
+ETCDCTL_API=3 timeout 2 etcdctl --endpoints=10.18.30.11:2379,10.18.30.12:2379,10.18.30.13:2379 endpoint status --write-out=table 2>/dev/null
 if [ $? -ne 0 ]; then
     echo "❌ etcd集群检查失败或超时"
 fi
